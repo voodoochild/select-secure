@@ -74,7 +74,15 @@ body {
   }
 }
 
+/* ====== media ====== */
+.media {margin:10px;}
+.media, .bd {overflow:hidden; _overflow:visible; zoom:1;}
+.media .img {float:left; margin-right: 10px;}
+.media .img img{display:block;}
+.media .imgExt{float:right; margin-left: 10px;}
+
 #things {
+  margin-top: 30px;
   padding-bottom: 200px;
 
   .practice + .practice {
@@ -83,12 +91,21 @@ body {
     padding-top: 10px;
   }
 
+  img.icon {
+    margin-right: 20px;
+    width: 100px;
+  }
+
+  h3 {
+    line-height: 1;
+  }
+
 }
 
 #footer {
   background-color: $background;
-  border-top: 2px solid $highlight;
-  height: 132px;
+  border-top: 2px solid $foreground;
+  height: 150px;
   position: fixed;
   bottom: 0; left: 0;
   overflow: hidden;
