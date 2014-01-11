@@ -17,3 +17,55 @@ body {
   margin: 0 auto;
   width: 80%;
 }
+
+#banner {
+  h1 {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .tagline {
+    margin-left: 20px;
+  }
+}
+
+#filters {
+  border-top: 2px solid $highlight;
+  border-bottom: 2px solid $highlight;
+  padding-bottom: 10px;
+
+  .filter-block {
+    display: inline-block;
+    margin-right: 5%;
+    vertical-align: top;
+    width: 35%;
+
+    &:first-child {
+      width: 20%;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  ul {
+    @extend %unstyled-list;
+
+    li {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+}

@@ -10,18 +10,65 @@
   <div id="wrapper">
     <div id="banner" role="banner">
       <h1>Select Secure</h1>
+      <span class="tagline">[snazzy tagline goes here]</span>
     </div>
     <div role="main">
-      <form id="selector">
-        <label for="">
-          <select>
-            <option></option>
-          </select>
-        </label>
+      <form id="filters">
+        <div class="filter-block">
+          <label for="function">
+            <h2>I want to</h2>
+            <select id="function" name="function">
+              <option value=""></option>
+              <option value="chat">Chat</option>
+              <option value="email">Email</option>
+              <option value="browse">Browse</option>
+            </select>
+          </label>
+        </div>
+        <div class="filter-block">
+          <h2>I want to keep private</h2>
+          <ul>
+            <li>
+              <label for="secureContent">
+                <input type="checkbox" id="secureContent" name="secureContent" value="secureContent" />
+                the contents of the communication
+              </label>
+            </li>
+            <li>
+              <label for="secureMeta">
+                <input type="checkbox" id="secureMeta" name="secureMeta" value="secureMeta" />
+                the fact that the communication is taking place (the metadata)
+              </label>
+            </li>
+            <li>
+              <label for="secureIdentity">
+                <input type="checkbox" id="secureIdentity" name="secureIdentity" value="secureIdentity" />
+                my identity, so that the person that I’m communication with does not know who I am
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="filter-block">
+          <h2>And I want to</h2>
+          <ul>
+            <li>
+              <label for="circumventBlocks">
+                <input type="checkbox" id="circumventBlocks" name="circumventBlocks" value="circumventBlocks" />
+                get around Internet filtering
+              </label>
+            </li>
+            <li>
+              <label for="independentNetwork">
+                <input type="checkbox" id="independentNetwork" name="independentNetwork" value="independentNetwork" />
+                use a network that is not controlled by companies or governments
+              </label>
+            </li>
+          </ul>
+        </div>
       </form>
     </div>
-    <div role="footer">
-    </div>
   </div>
+  <script src="components/jquery/jquery.min.js"></script>
+  <script src="javascripts/main.js"></script>
 </body>
 </html>

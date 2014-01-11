@@ -21,3 +21,11 @@ $mq-breakpoints: (
 );
 
 @import '../../components/sass-mq/_mq';
+
+// Placeholders
+
+%unstyled-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

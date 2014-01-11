@@ -18,11 +18,19 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $serif;
+  font-family: $sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
 h1 {
   @include font-size(48);
+}
+
+.tagline {
+  @include font-size(18);
+}
+
+#filters h2 {
+  @include font-size(20);
 }
