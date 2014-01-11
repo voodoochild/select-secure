@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@import '_mixins';
+@import '_base';
+@import '_type';
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: $background;
+}
+
+#wrapper {
+  margin: 0 auto;
+  width: 80%;
+}

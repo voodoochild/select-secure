@@ -1,0 +1,23 @@
+// Reset
+@import '../../components/normalize-scss/_normalize';
+
+// Colours
+$foreground: #333;
+$background: #f0f0f0;
+$highlight: #dd1f3e;
+
+// Fonts
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+$sans-serif: "Droid Sans", helvetica, arial, sans-serif;
+$serif: "Droid Serif", serif;
+
+// Media queries
+$mq-responsive: true;
+$mq-breakpoints: (
+  (mobile   300px)
+  (tablet   600px)
+  (desktop  900px)
+);
+
+@import '../../components/sass-mq/_mq';
