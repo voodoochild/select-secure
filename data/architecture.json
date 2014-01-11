@@ -1,0 +1,10 @@
+{
+    "u1":"user-anon",
+    "ep1":"endpoint-unsecure",
+    "t1": "transport-open",
+    "s":"server-open",
+    "t2": "transport-open",
+    "ep2":"endpoint-unsecure",
+    "u2":"user-anon",
+ 
+}
