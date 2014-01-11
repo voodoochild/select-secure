@@ -9,8 +9,7 @@
 <body>
   <div id="wrapper">
     <div id="banner" role="banner">
-      <h1>Select Secure</h1>
-      <span class="tagline">[snazzy tagline goes here]</span>
+      <h1><i class="fa fa-lock"></i> Select Secure</h1>
     </div>
     <div role="main">
       <form id="filters">
@@ -67,40 +66,61 @@
         </div>
       </form>
     </div>
+
+    <div id="things">
+      <div id="cryptocat" class="media practice chat secureContent">
+        <img class="img icon" src="img/icons/cryptocat.png" alt="Cryptocat" />
+        <div class="bd">
+          <h3>CryptoCat</h3>
+          <div class="description">Cryptocat is an open source web application intended to allow secure, encrypted online chatting. Cryptocat encrypts chats on the client side, only trusting the server with data that is already encrypted. Cryptocat is offered as an app for Mac OS X or as a browser extension for Google Chrome, Mozilla Firefox and Apple Safari.</div>
+          <!-- <span class="link"><a href="http://crypto.cat">crypto.cat</a></span>
+          <span class="documentation"><a href="http://en.wikipedia.org/wiki/Cryptocat">Documentation</a></div>
+          <span class="trusting">The cryptocat developer; the app store you got the application from</span>
+          <span class="documentation"><a href="http://en.wikipedia.org/wiki/Cryptocat">Documentation</a></span> -->
+        </div>
+      </div>
+
+      <div id="tool" class="media practice secureMeta">
+        <img class="img icon" src="img/icons/tor.png" alt="Tor" />
+        <div class="bd">
+          <h3>Tor</h3>
+          <div class="description">Tor is a way to browse anonymously. It routes webpages through relays to obscure what you're doing and looking at. Think of it as asking a friend to take a message and give it to a friend, who gives it to a friend, who gives it to a friend, until it is delivered by someone unrelated to the person who sent it. It's like a game of telephone where the message is preserved intact but it becomes unclear who it was who said it originally.</div>
+          <!-- <span class="link"><a href="https://www.torproject.org/">https://www.torproject.org/</a></div>
+          <span class="documentation"><a href="https://www.torproject.org/docs/documentation.html.en">Documentation</a></div>
+          <span class="trusting">The randomly selected 'exit' node which passes your traffic on to the Internet.</span> -->
+        </div>
+      </div>
+
+      <div id="tool" class="media practice secureIdentity">
+        <div class="bd">
+          <h3>Use a pseduonym</h3>
+          <div class="description">A pseudonym is a name you use instead of your usual name. It can be a nickname or alias you use regularly (eg js360 is Jon Smith's email address and his username on a variety of websites) or something you use just once and no one will be able to guess is you (there is nothing to connect anon123abc to Jon Smith). The more often you use a pseudonym and the more people and services which know you use it, the less secure it is.</div>
+          <!-- <span class="link"></div>
+          <span class="documentation"></div>
+          <span class="trusting">Anyone who knows the connection between your pseudonym and real identity</span> -->
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" role="footer">
+      <div class="footer-block network-structure">
+        <h2>Network structure</h2>
+        <ol id="current-path">
+          <li class="user-known">User known</li>
+          <li class="user-anon">User anon</li>
+          <li class="transport-open">Transport open</li>
+          <li class="transport-secure">Transport secure</li>
+          <li class="transport-onion">Transport onion</li>
+          <li class="server-open">Server open</li>
+          <li class="server-passthrough">Server passthrough</li>
+          <li class="endpoint-unsecure">Endpoint unsecure</li>
+        </ol>
+      </div>
+      <div class="footer-block trusting">
+        <h2>You are trusting:</h2>
+        Everyone
+      </div>
+    </div>
   </div>
-  
-  
-  <div id="cryptocat" class="practice chat secureContent">
-      <div class="header">CryptoCat</div>
-      <div class="icon"><img src="img/icons/cryptocat.png" alt="Cryptocat"></div>
-      <div class="description">Cryptocat is an open source web application intended to allow secure, encrypted online chatting. Cryptocat encrypts chats on the client side, only trusting the server with data that is already encrypted. Cryptocat is offered as an app for Mac OS X or as a browser extension for Google Chrome, Mozilla Firefox and Apple Safari.</div>
-      <span class="link"><a href="http://crypto.cat">crypto.cat</a></div>
-      <span class="documentation"><a href="http://en.wikipedia.org/wiki/Cryptocat">Documentation</a></div>      
-      <span class="trusting">The cryptocat developer; the app store you got the application from</span>
-  </div>      
-
-  <div id="tool" class="practice secureMeta">
-      <div class="header">Tor</div>
-      <div class="icon"><img src="img/icons/tor.png" alt="Tor"></div>
-      <div class="description">Tor is a way to browse anonymously. It routes webpages through relays to obscure what you're doing and looking at. Think of it as asking a friend to take a message and give it to a friend, who gives it to a friend, who gives it to a friend, until it is delivered by someone unrelated to the person who sent it. It's like a game of telephone where the message is preserved intact but it becomes unclear who it was who said it originally.</div>
-      <span class="link"><a href="https://www.torproject.org/">https://www.torproject.org/</a></div>
-      <span class="documentation"><a href="https://www.torproject.org/docs/documentation.html.en">Documentation</a></div>      
-     <span class="trusting">The randomly selected 'exit' node which passes your traffic on to the Internet.</span>   
-  </div>      
-
-  <div id="tool" class="practice secureIdentity">
-      <div class="header">Use a pseduonym</div>
-      <div class="description">A pseudonym is a name you use instead of your usual name. It can be a nickname or alias you use regularly (eg js360 is Jon Smith's email address and his username on a variety of websites) or something you use just once and no one will be able to guess is you (there is nothing to connect anon123abc to Jon Smith). The more often you use a pseudonym and the more people and services which know you use it, the less secure it is.</div>
-      <span class="link"></div>
-      <span class="documentation"></div>   
-      <span class="trusting">Anyone who knows the connection between your pseudonym and real identity</span>   
-  </div>      
-
-
-  
-    
-  
-  <script src="components/jquery/jquery.min.js"></script>
-  <script src="javascripts/main.js"></script>
 </body>
 </html>
