@@ -24,6 +24,12 @@ $mq-breakpoints: (
 
 // Placeholders
 
+%hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 %unstyled-list {
   list-style: none;
   margin: 0;

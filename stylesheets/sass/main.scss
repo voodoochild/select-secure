@@ -22,6 +22,10 @@ body {
   h1 {
     display: inline-block;
     margin-bottom: 20px;
+
+    i.fa {
+      color: $highlight;
+    }
   }
 
   .tagline {
@@ -67,5 +71,90 @@ body {
 
   label {
     font-size: 14px;
+  }
+}
+
+#things {
+  padding-bottom: 200px;
+
+  .practice + .practice {
+    border-top: 1px dashed $foreground;
+    margin-top: 50px;
+    padding-top: 10px;
+  }
+
+}
+
+#footer {
+  background-color: $background;
+  border-top: 2px solid $highlight;
+  height: 132px;
+  position: fixed;
+  bottom: 0; left: 0;
+  overflow: hidden;
+  padding: 0 10%;
+  width: 100%;
+
+  .footer-block {
+    float: left;
+
+    &.network-structure {
+      width: 60%;
+    }
+
+    &.trusting {
+      width: 40%;
+    }
+  }
+}
+
+ol#current-path {
+  @extend %unstyled-list;
+
+  li {
+    @extend %hide-text;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 50px;
+    margin-right: 5px;
+    width: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.user-known {
+      background-image: url(../../img/user-known.png);
+    }
+
+    &.user-anon {
+      background-image: url(../../img/user-anon.png);
+    }
+
+    &.transport-open {
+      background-image: url(../../img/transport-open.png);
+    }
+
+    &.transport-secure {
+      background-image: url(../../img/transport-encrypted.png);
+    }
+
+    &.transport-onion {
+      background-image: url(../../img/transport-onion.png);
+    }
+
+    &.server-passthrough {
+      background-image: url(../../img/server-passthrough.png);
+    }
+
+    &.server-open {
+      background-image: url(../../img/server-open.png);
+    }
+
+    &.endpoint-unsecure {
+      background-image: url(../../img/endpoint-unsecure.png);
+    }
   }
 }
