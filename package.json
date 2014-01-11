@@ -1,6 +1,6 @@
 {
   "name": "skeleton",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "devDependencies": {
     "grunt-contrib-watch": "~0.5.3",
     "grunt": "~0.4.1",
